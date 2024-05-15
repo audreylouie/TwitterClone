@@ -1,5 +1,5 @@
 # TwitterClone
-This is a scaled down version of the micro-blogging site formerly known as Twitter. This website will feature signup, login, posting, replying to posts and different feeds of posts.
+This is a blogging site that features signup, login, posting, replying to posts and different feeds of posts.
 
 # Features
 - **Signup**
