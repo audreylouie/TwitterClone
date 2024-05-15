@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <title>Editor's Page</title>
+    </head>
+
+    <body onload="list_blog_files();">
+        <h1>Shaham's Blog</h1>
+        <label for= "title">Title: </label><br>
+        <input type="text" id="title"><br>
+        <label for= "text">Text: </label><br>
+        <textarea id="text"></textarea><br>
+        <button onclick = "addEntry();">Add Entry</button>
+
+        <div id="divResults"></div>
+        <a href="/logout.html">logout</a>
+
+
+
+        <script src="/static/myscript.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Profile Page</title>
+
+</head>
+    <body onload="list_post_files('{{ username }}');">
+        <a href="/feed.html">Go to feed</a><br>
+        <div class="container">
+            <img id="profilePic" src="{{ image_url }}" alt="Profile Picture">
+            <h1>@{{username}}</h1>
+        </div>
+        <div class="upload-section">
+            <label for="file">Change Profile Picture:</label>
+            <input type="file" id="file">
+            <button onclick="upload_photo();">Upload</button>
+        </div>
+
+        <div class="post-container">
+            <div class="post-card">
+                <label for="text">Make a Post</label><br>
+                <textarea id="text" placeholder="Write something..."></textarea><br>
+                <button onclick="postEntry();">Post</button>
+            </div>
+        </div>
+
+        <h2>Posts</h2>
+
+        <div id="divResults"></div>
+
+        <a href="/logout.html">Logout</a>
+
+    <script src="/static/newscript.js"></script>
+    </body>
+</html>

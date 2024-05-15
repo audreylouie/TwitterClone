@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>SignUp Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .signup-container {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding:50px;
+            padding-right:60px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .signup-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <form class="signup-form" action="/signup" method="GET">
+            Username: <input type="text" class="input-field" id="txtName" name="username"><br>
+            Email: <input type="text" class="input-field" id="txtEmail" name="email"><br>
+            Password: <input type="password" class="input-field" id="txtPassword" name="password"><br>
+            <button type="button" class="signup-btn" onclick="signup();">SignUp</button> <br>
+        </form>
+
+        <a href="/login.html" class="login-link">Have an account? Login</a>
+    </div>
+
+    <script src="/static/newscript.js"></script>
+</body>
+</html>

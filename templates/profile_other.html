@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        img{
+            margin-left: 20px;
+        }
+    </style>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <title>Profile Page</title>
+        <style>
+        .container {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+        }
+
+        .container img {
+            width: 100px; /* Set width of the image */
+            margin-right: 10px; /* Add some space between image and heading */
+        }
+    </style>
+    </head>
+
+   <body onload="list_post_files('{{ username }}');">
+        <a href="/feed.html">Go to feed</a> <br>
+        <div class= "container">
+        <img id="profilePic" src="{{ image_url }}" width="100">
+        <h1>@{{username}}</h1>
+        </div>
+
+        <h2>Posts</h2>
+
+        <div id="divResults"></div>
+        <a href="/logout.html">logout</a>
+
+
+
+        <script src="/static/newscript.js"></script>
+    </body>
+    </html>

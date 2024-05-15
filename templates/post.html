@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <title>Profile Page</title>
+
+        <style>
+        .container {
+            display: block;
+            align-items: left;
+        }
+
+        .container img {
+            width: 100px;
+            margin-right: 10px;
+        }
+    </style>
+
+    </head>
+
+   <body onload="list_replies('{{ post_id }}');">
+        <div class= "container">
+        <h1>@{{username}}</h1>
+        {{text}} <br><br>
+
+        <label for= "text">Reply: </label><br>
+        <textarea id="text"></textarea><br>
+        <input type="hidden" id="pid" value="{{ post_id }}">
+        <button onclick = "postReply();">Reply</button>
+        </div>
+
+
+        <hr>
+        <div id="results"  class="results">
+
+        </div>
+
+
+
+
+        <script src="/static/newscript.js"></script>
+    </body>
+    </html>
